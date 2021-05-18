@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="link_control32_0_3_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1621339732">
+  <File Type="PA-TCL" Name="link_control32_0_3.tcl"/>
+  <File Type="REPORTS-TCL" Name="link_control32_0_3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="link_control32_0_3.vds"/>
+  <File Type="RDS-UTIL" Name="link_control32_0_3_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="link_control32_0_3_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="link_control32_0_3.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/link_control32_0_3">
+    <File Path="$PSRCDIR/sources_1/bd/link/ip/link_control32_0_3/link_control32_0_3.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Proj-test/ProjTest/ProjTest.srcs/sources_1/bd/link/ip/link_control32_0_3/link_control32_0_3.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="link_control32_0_3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/link_control32_0_3">
+    <File Path="$PSRCDIR/sources_1/bd/link/ip/link_control32_0_3/link_control32_0_3.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Proj-test/ProjTest/ProjTest.srcs/sources_1/bd/link/ip/link_control32_0_3/link_control32_0_3.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="link_control32_0_3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

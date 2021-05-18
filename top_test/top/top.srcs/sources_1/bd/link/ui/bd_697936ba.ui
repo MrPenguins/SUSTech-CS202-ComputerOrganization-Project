@@ -1,0 +1,61 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clk -pg 1 -y 790 -defaultsOSRD
+preplace port reset -pg 1 -y 960 -defaultsOSRD
+preplace portBus switchIn -pg 1 -y 1040 -defaultsOSRD
+preplace portBus ledout -pg 1 -y 600 -defaultsOSRD
+preplace inst Executs32_0 -pg 1 -lvl 4 -y 180 -defaultsOSRD
+preplace inst Ifetc32_0 -pg 1 -lvl 5 -y 250 -defaultsOSRD
+preplace inst switchs_0 -pg 1 -lvl 1 -y 990 -defaultsOSRD
+preplace inst dmemory32_0 -pg 1 -lvl 1 -y 820 -defaultsOSRD
+preplace inst Idecode32_0 -pg 1 -lvl 3 -y 400 -defaultsOSRD
+preplace inst leds_0 -pg 1 -lvl 7 -y 600 -defaultsOSRD
+preplace inst MemOrIO_0 -pg 1 -lvl 2 -y 790 -defaultsOSRD
+preplace inst control32_0 -pg 1 -lvl 6 -y 210 -defaultsOSRD
+preplace netloc switchIn_1 1 0 1 NJ
+preplace netloc leds_0_ledout 1 7 1 N
+preplace netloc Executs32_0_Zero 1 4 1 1790
+preplace netloc control32_0_MemWrite 1 0 7 60 740 410 630 NJ 630 NJ 630 NJ 630 NJ 630 2810
+preplace netloc Ifetc32_0_link_addr 1 2 4 890 600 NJ 600 1840J 580 2260
+preplace netloc switchs_0_switchrdata 1 1 1 410
+preplace netloc MemOrIO_0_addr_out 1 0 7 40 640 NJ 640 800 250 1270J 520 NJ 520 NJ 520 2860J
+preplace netloc Executs32_0_ALU_Result 1 0 6 60 1090 400 350 880 240 1290J 480 1760 400 2310J
+preplace netloc control32_0_MemRead 1 1 6 440 620 NJ 620 NJ 620 NJ 620 NJ 620 2750
+preplace netloc control32_0_Sftmd 1 3 4 1340 440 NJ 440 NJ 440 2700
+preplace netloc Idecode32_0_read_data_1 1 3 2 1260 340 1770J
+preplace netloc Ifetc32_0_Instruction 1 2 4 890 230 1310J 470 1770J 510 2280
+preplace netloc MemOrIO_0_write_data 1 0 3 50 660 NJ 660 790
+preplace netloc Idecode32_0_read_data_2 1 1 3 430 220 NJ 220 1280
+preplace netloc Idecode32_0_imme_extend 1 3 1 1300
+preplace netloc Ifetc32_0_branch_base_addr 1 3 3 1350 390 NJ 390 2250
+preplace netloc MemOrIO_0_SwitchCtrl 1 0 3 50 1130 NJ 1130 790
+preplace netloc control32_0_I_format 1 3 4 1370 430 NJ 430 NJ 430 2710
+preplace netloc control32_0_Jr 1 3 4 1380 350 1820 500 NJ 500 2840
+preplace netloc Ifetc32_0_Funtion_code 1 3 3 1320 460 NJ 460 2300
+preplace netloc Ifetc32_0_Opcode 1 3 3 1370 10 NJ 10 2290
+preplace netloc control32_0_ALUSrc 1 3 4 1360 420 NJ 420 NJ 420 2720
+preplace netloc control32_0_ALUOp 1 3 4 1330 450 NJ 450 NJ 450 2690
+preplace netloc clk_1 1 0 7 30 1100 NJ 1100 820 580 NJ 580 1800 590 NJ 590 2840J
+preplace netloc control32_0_MemorIOtoReg 1 2 5 870 560 NJ 560 NJ 560 NJ 560 2740
+preplace netloc Executs32_0_Addr_Result 1 4 1 N
+preplace netloc control32_0_nBranch 1 4 3 1840 470 NJ 470 2770
+preplace netloc control32_0_Branch 1 4 3 1830 410 NJ 410 2730
+preplace netloc control32_0_Jal 1 2 5 850 540 NJ 540 1810 490 NJ 490 2790
+preplace netloc MemOrIO_0_LEDCtrl 1 2 5 830 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc dmemory32_0_read_data 1 1 1 N
+preplace netloc control32_0_IOWrite 1 1 6 450 670 NJ 670 NJ 670 NJ 670 NJ 670 2850
+preplace netloc control32_0_IORead 1 0 7 40 1120 420 650 NJ 650 NJ 650 NJ 650 NJ 650 2760
+preplace netloc control32_0_RegDST 1 2 5 880 570 NJ 570 NJ 570 NJ 570 2820
+preplace netloc reset_1 1 0 7 20 1110 NJ 1110 840 590 NJ 590 1780 600 NJ 600 2870J
+preplace netloc MemOrIO_0_r_wdata 1 2 5 810 260 1250J 530 NJ 530 NJ 530 2830J
+preplace netloc control32_0_RegWrite 1 2 5 860 550 NJ 550 NJ 550 NJ 550 2780
+preplace netloc control32_0_Jmp 1 4 3 1850 480 NJ 480 2800
+preplace netloc Ifetc32_0_Shamt 1 3 3 1380 20 NJ 20 2270
+levelinfo -pg 1 0 230 620 1070 1570 2050 2500 3030 3210 -top 0 -bot 1140
+",
+}
+{
+   da_clkrst_cnt: "4",
+}

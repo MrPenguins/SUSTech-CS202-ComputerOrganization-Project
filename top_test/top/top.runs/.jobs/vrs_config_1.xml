@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="link_control32_0_3_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_control32_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_Ifetc32_0_0_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_Ifetc32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_Idecode32_0_1_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_Idecode32_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_Executs32_0_0_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_Executs32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_dmemory32_0_1_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_dmemory32_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_MemOrIO_0_0_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_MemOrIO_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_leds_0_0_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_leds_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="link_switchs_0_0_synth_1" LaunchDir="G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/link_switchs_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
