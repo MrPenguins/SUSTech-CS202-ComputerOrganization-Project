@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='G:/Spring 2021/orgnization/proj/Proj-test/ProjTest/ProjTest.runs/synth_1'
+HD_PWD='G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/top_test/top/top.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Ifetc32.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Ifetc32.tcl
+EAStep vivado -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl

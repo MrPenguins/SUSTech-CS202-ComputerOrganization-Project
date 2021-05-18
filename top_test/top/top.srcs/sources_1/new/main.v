@@ -20,14 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module main(clk,
+module main(clock,
     ledout,
     reset,
     switchIn);
-  input clk;
+  input clock;
   output [23:0]ledout;
   input reset;
   input [23:0]switchIn;
+
+  wire clk;
+  cpuclk c(.clk_in1(clock), .clk_out1(clk));
 
   wire [31:0]Executs32_0_ALU_Result;
   wire [31:0]Executs32_0_Addr_Result;

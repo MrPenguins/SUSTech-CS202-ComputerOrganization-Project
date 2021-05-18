@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="link_dmemory32_0_1_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1621339736">
+<GenRun Id="link_dmemory32_0_1_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1621350781">
   <File Type="PA-TCL" Name="link_dmemory32_0_1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="link_dmemory32_0_1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="link_dmemory32_0_1_reports.tcl"/>
   <File Type="RDS-RDS" Name="link_dmemory32_0_1.vds"/>
   <File Type="RDS-UTIL" Name="link_dmemory32_0_1_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="link_dmemory32_0_1_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="link_dmemory32_0_1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="link_dmemory32_0_1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="link_dmemory32_0_1_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/link_dmemory32_0_1">
     <File Path="$PSRCDIR/sources_1/bd/link/ip/link_dmemory32_0_1/link_dmemory32_0_1.xci">
       <FileInfo>
