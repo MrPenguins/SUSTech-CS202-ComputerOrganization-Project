@@ -12,9 +12,10 @@ initial:
 	ori $7,$0,0x00C0	# $7 store 110
 	ori $8,$0,0x5555	# $8 store 0101 0101 0101 0101
 	and $12,$12,$0		# set val to zero
+	ori $16,$0,0x0010	# $16 rst value
 	
 task1:
-	lw $9,0xC62($28)	# load the control bit
+	lw $9,0xC72($28)	# load the control bit
 	# according to the control bit, determine the action
 	beq $9,$0,zzz
 	beq $9,$2,zzo
@@ -62,8 +63,10 @@ task1:
 pause:
 	# $10 as counter, $11 as boundary
 	and $10,$10,$0	# set $10 to 0
-	ori $11,$0,0x6590	# set $11 to 26000
+	ori $11,$0,0x74FBEA	# set $11 to 26000
 	pauseloop:
+	lw $15,0xC72($28)	# load the control bit
+	beq $15,$16,initial
 	beq $10,$11,endloop
 	addi $10,$10,0x0001
 	j pauseloop
