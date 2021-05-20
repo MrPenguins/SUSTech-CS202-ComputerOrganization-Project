@@ -1,7 +1,9 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog xil_defaultlib  --include "../../../../top.srcs/sources_1/ip/cpuclk" \
 "../../../../top.srcs/sources_1/ip/RAM/sim/RAM.v" \
 "../../../../top.srcs/sources_1/ip/prgrom/sim/prgrom.v" \
+"../../../../top.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" \
+"../../../../top.srcs/sources_1/ip/cpuclk/cpuclk.v" \
 "../../../../top.srcs/sources_1/new/Executs32.v" \
 "../../../../top.srcs/sources_1/new/IFetc32.v" \
 "../../../../top.srcs/sources_1/new/Idecoder32.v" \
