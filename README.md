@@ -10,3 +10,5 @@
 |Required test 1|**In progress**
 |Required test 2|**In progress**
 |Test-use asm file design|**Not start**
+
+*TODO:* Special clock rate 500Hz for digits tube. 
