@@ -12,3 +12,4 @@
 |Test-use asm file design|**Not start**
 
 *TODO:* Special clock rate 500Hz for digits tube. 
+*Note: *addui
