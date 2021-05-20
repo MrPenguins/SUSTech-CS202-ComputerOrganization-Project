@@ -21,7 +21,7 @@
 
 
 module scan(
-input[8:0] scanwdata,//data which is shown on the screen
+input[15:0] scanwdata,//data which is shown on the screen
 input scan_clk,
 input scan_rst,
 input scan_write,//write signal
@@ -112,23 +112,23 @@ always @(posedge scan_clk,negedge scan_rst) begin
     end
     else begin
         //decide hundred
-        if(scanwdata>=9'd100 & scanwdata<9'd200) begin
+        if(scanwdata>=16'd100 & scanwdata<16'd200) begin
             highBit<=Math1;
             highBit_M<=4'd1;
         end
-        else if(scanwdata>=9'd200 & scanwdata<9'd300) begin
+        else if(scanwdata>=16'd200 & scanwdata<16'd300) begin
             highBit<=Math2;
             highBit_M<=4'd2;
         end
-        else if(scanwdata>=9'd300 & scanwdata<9'd400) begin
+        else if(scanwdata>=16'd300 & scanwdata<16'd400) begin
             highBit<=Math3;
             highBit_M<=4'd3;
         end
-        else if(scanwdata>=9'd400 & scanwdata<9'd500) begin
+        else if(scanwdata>=16'd400 & scanwdata<16'd500) begin
             highBit<=Math4;
             highBit_M<=4'd4;
         end
-        else if(scanwdata>=9'd500 & scanwdata<9'd511) begin
+        else if(scanwdata>=16'd500 & scanwdata<16'd511) begin
             highBit<=Math5;
             highBit_M<=4'd5;
         end
@@ -138,39 +138,39 @@ always @(posedge scan_clk,negedge scan_rst) begin
         end
 
         //decide decimal
-        if(scanwdata-highBit_M*9'd100>=9'd10&scanwdata-highBit_M*9'd100<9'd20) begin
+        if(scanwdata-highBit_M*16'd100>=16'd10&scanwdata-highBit_M*16'd100<16'd20) begin
             middleBit<=Math1;
             middleBit_M<=4'd1;
         end
-        else if(scanwdata-highBit_M*9'd100>=9'd20&scanwdata-highBit_M*9'd100<9'd30) begin
+        else if(scanwdata-highBit_M*16'd100>=16'd20&scanwdata-highBit_M*16'd100<16'd30) begin
             middleBit<=Math2;
             middleBit_M<=4'd2;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd30&scanwdata-highBit_M*9'd100<9'd40) begin
+        if(scanwdata-highBit_M*16'd100>=16'd30&scanwdata-highBit_M*16'd100<16'd40) begin
             middleBit<=Math3;
             middleBit_M<=4'd3;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd40&scanwdata-highBit_M*9'd100<9'd50) begin
+        if(scanwdata-highBit_M*16'd100>=16'd40&scanwdata-highBit_M*16'd100<16'd50) begin
             middleBit<=Math4;
             middleBit_M<=4'd4;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd50&scanwdata-highBit_M*9'd100<9'd60) begin
+        if(scanwdata-highBit_M*16'd100>=16'd50&scanwdata-highBit_M*16'd100<16'd60) begin
             middleBit<=Math5;
             middleBit_M<=4'd5;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd60&scanwdata-highBit_M*9'd100<9'd70) begin
+        if(scanwdata-highBit_M*16'd100>=16'd60&scanwdata-highBit_M*16'd100<16'd70) begin
             middleBit<=Math6;
             middleBit_M<=4'd6;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd70&scanwdata-highBit_M*9'd100<9'd80) begin
+        if(scanwdata-highBit_M*16'd100>=16'd70&scanwdata-highBit_M*16'd100<16'd80) begin
             middleBit<=Math7;
             middleBit_M<=4'd7;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd80&scanwdata-highBit_M*9'd100<9'd90) begin
+        if(scanwdata-highBit_M*16'd100>=16'd80&scanwdata-highBit_M*16'd100<16'd90) begin
             middleBit<=Math8;
             middleBit_M<=4'd8;
         end
-        if(scanwdata-highBit_M*9'd100>=9'd90&scanwdata-highBit_M*9'd100<9'd100) begin
+        if(scanwdata-highBit_M*16'd100>=16'd90&scanwdata-highBit_M*16'd100<16'd100) begin
             middleBit<=Math9;
             middleBit_M<=4'd9;
         end
@@ -180,31 +180,31 @@ always @(posedge scan_clk,negedge scan_rst) begin
         end
 
         //decide unit
-        if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd1) begin
+        if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd1) begin
             lowBit<=Math1;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd2) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd2) begin
             lowBit<=Math2;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd3) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd3) begin
             lowBit<=Math3;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd4) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd4) begin
             lowBit<=Math4;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd5) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd5) begin
             lowBit<=Math5;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd6) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd6) begin
             lowBit<=Math6;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd7) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd7) begin
             lowBit<=Math7;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd8) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd8) begin
             lowBit<=Math8;
         end
-        else if(scanwdata-highBit_M*9'd100-middleBit_M*9'd10==9'd9) begin
+        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd9) begin
             lowBit<=Math9;
         end
         else begin
