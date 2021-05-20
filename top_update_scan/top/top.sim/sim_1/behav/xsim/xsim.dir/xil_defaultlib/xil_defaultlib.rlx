@@ -1,0 +1,20 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/DigitalDesign/top_test/top/top.sim/sim_1/behav/xsim/glbl.v,1621425188,verilog,,,,glbl,,,,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sim_1/new/main_tb.v,1621442795,verilog,,,,main_tb,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/RAM/sim/RAM.v,1621506773,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/prgrom/sim/prgrom.v,,RAM,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/cpuclk/cpuclk.v,1621427817,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/Executs32.v,,cpuclk,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1621427817,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/prgrom/sim/prgrom.v,1621506748,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,prgrom,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/Executs32.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/IFetc32.v,,Executs32,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/IFetc32.v,1621513460,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/Idecoder32.v,,Ifetc32,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/Idecoder32.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/MemOrIO.v,,Idecode32,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/MemOrIO.v,1621506562,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/controller.v,,MemOrIO,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/controller.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/dmemory32.v,,control32,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/dmemory32.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/leds.v,,dmemory32,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/leds.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/main.v,,leds,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/main.v,1621514077,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/scan.v,,main,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
+,,,,D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/switchs.v,,scan,,,,,,,,
+D:/DigitalDesign/top_test/top/top.srcs/sources_1/new/switchs.v,1621425189,verilog,,D:/DigitalDesign/top_test/top/top.srcs/sim_1/new/main_tb.v,,switchs,,,../../../../top.srcs/sources_1/ip/cpuclk,,,,,
