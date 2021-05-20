@@ -13,4 +13,4 @@
 
 *TODO:* Special clock rate 500Hz for digits tube. 
 
-*Note:*addui
+*Note:* addui
