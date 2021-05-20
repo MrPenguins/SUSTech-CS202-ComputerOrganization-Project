@@ -29,7 +29,6 @@ input scan_cs,//scan chip select from memoryio
 output [7:0] DIG,//bit selection
 output [7:0] Y//seg selection
     );
-reg clkout1;
 reg[31:0] cnt1;
 reg[2:0] scan_cnt1;
 reg[6:0] highBit;//present hundred
@@ -56,26 +55,8 @@ reg[7:0] DIG_R;
 assign Y={1'b1,(~Y_r[6:0])};//dot never light
 assign DIG=~DIG_R;
 
-//frequency division
-always @(posedge scan_clk or negedge scan_rst)
-begin
-    if(!scan_rst) begin
-        cnt1<=0;
-        clkout1<=0;
-    end
-    else begin
-        if(cnt1==(period1>>1)-1)
-        begin
-            clkout1<=~clkout1;
-            cnt1<=0;
-        end
-        else
-        cnt1<=cnt1+1;
-    end
-end
-
 //control stable showing
-always @(posedge clkout1 or negedge scan_rst)
+always @(posedge scan_clk or negedge scan_rst)
 begin
     if(!scan_rst)
     scan_cnt1<=0;
