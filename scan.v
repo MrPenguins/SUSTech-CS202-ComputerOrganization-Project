@@ -31,13 +31,12 @@ output [7:0] Y//seg selection
     );
 reg[31:0] cnt1;
 reg[2:0] scan_cnt1;
+reg[6:0] tenThousandsBit;//present tenthousands
+reg[6:0] thousandBit;//present thousand
 reg[6:0] highBit;//present hundred
 reg[6:0] middleBit;// present ten
 reg[6:0] lowBit;// present unit
-reg[3:0] highBit_M;//present hundred real number
-reg[3:0] middleBit_M;// present ten real number
-reg complete_high;//decide if high bit has been calculated
-reg complete_middle;//decide if middle bit has been calculated
+reg[19:0] decimal_form;//data of decimal form
 
 parameter period1=200000;//period1 stable showing
 parameter Math0=7'b0111111;
@@ -57,6 +56,8 @@ reg[7:0] DIG_R;
 assign Y={1'b1,(~Y_r[6:0])};//dot never light
 assign DIG=~DIG_R;
 
+Bin_BCD ubcd(.binary(scanwdata),.decimal(decimal_form));
+
 //control stable showing
 always @(posedge scan_clk or posedge scan_rst)
 begin
@@ -64,7 +65,7 @@ begin
     scan_cnt1<=0;
     else begin
         scan_cnt1<=scan_cnt1+1;
-        if(scan_cnt1==3'd2) scan_cnt1<=0;//if just want to show n bits in the right, then turn if(==)n-1
+        if(scan_cnt1==3'd4) scan_cnt1<=0;//if just want to show n bits in the right, then turn if(==)n-1
     end
 end
 
@@ -84,127 +85,77 @@ begin
     endcase
 end
 
-//turn scanwdata into decimal form [high bit]
+//turn scanwdata into decimal form 
 always @(posedge scan_clk,posedge scan_rst) begin
     if(scan_rst)begin
+        tenThousandsBit<=Null;
+        thousandBit<=Null;
         highBit<=Null;
-        lowBit<=Math0;
         middleBit<=Null;
-        middleBit_M<=4'd0;
-        complete_middle<=1'd0;
-        highBit_M<=4'd0;
-        complete_high<=1'd0;
+        lowBit<=Math0;
     end
     else begin
-        //decide hundred
-        if(scanwdata>=16'd100 & scanwdata<16'd200) begin
-            highBit<=Math1;
-            highBit_M<=4'd1;
-        end
-        else if(scanwdata>=16'd200 & scanwdata<16'd300) begin
-            highBit<=Math2;
-            highBit_M<=4'd2;
-        end
-        else if(scanwdata>=16'd300 & scanwdata<16'd400) begin
-            highBit<=Math3;
-            highBit_M<=4'd3;
-        end
-        else if(scanwdata>=16'd400 & scanwdata<16'd500) begin
-            highBit<=Math4;
-            highBit_M<=4'd4;
-        end
-        else if(scanwdata>=16'd500 & scanwdata<16'd511) begin
-            highBit<=Math5;
-            highBit_M<=4'd5;
-        end
-        else begin
-            highBit<=Null;
-            highBit_M<=4'd0;
-        end
-        complete_high<=~complete_high;
+        case(decimal_form[3:0])
+        9:lowBit=Math9;
+        8:lowBit=Math8;
+        7:lowBit=Math7;
+        6:lowBit=Math6;
+        5:lowBit=Math5;
+        4:lowBit=Math4;
+        3:lowBit=Math3;
+        2:lowBit=Math2;
+        1:lowBit=Math1;
+        default:lowBit=Math0;
+        endcase
+        case(decimal_form[7:4])
+        9:middleBit=Math9;
+        8:middleBit=Math8;
+        7:middleBit=Math7;
+        6:middleBit=Math6;
+        5:middleBit=Math5;
+        4:middleBit=Math4;
+        3:middleBit=Math3;
+        2:middleBit=Math2;
+        1:middleBit=Math1;
+        default:middleBit=Null;
+        endcase
+        case(decimal_form[11:8])
+        9:highBit=Math9;
+        8:highBit=Math8;
+        7:highBit=Math7;
+        6:highBit=Math6;
+        5:highBit=Math5;
+        4:highBit=Math4;
+        3:highBit=Math3;
+        2:highBit=Math2;
+        1:highBit=Math1;
+        default:highBit=Null;
+        endcase
+        case(decimal_form[15:12])
+        9:thousandBit=Math9;
+        8:thousandBit=Math8;
+        7:thousandBit=Math7;
+        6:thousandBit=Math6;
+        5:thousandBit=Math5;
+        4:thousandBit=Math4;
+        3:thousandBit=Math3;
+        2:thousandBit=Math2;
+        1:thousandBit=Math1;
+        default:thousandBit=Null;
+        endcase
+        case(decimal_form[19:16])
+        9:tenThousandsBit=Math9;
+        8:tenThousandsBit=Math8;
+        7:tenThousandsBit=Math7;
+        6:tenThousandsBit=Math6;
+        5:tenThousandsBit=Math5;
+        4:tenThousandsBit=Math4;
+        3:tenThousandsBit=Math3;
+        2:tenThousandsBit=Math2;
+        1:tenThousandsBit=Math1;
+        default:tenThousandsBit=Null;
+        endcase
     end
-end
-
-
-//turn scanwdata into decimal form [middle bit]
-always @(complete_high) begin
-        //decide decimal
-        if(scanwdata-highBit_M*16'd100>=16'd10&scanwdata-highBit_M*16'd100<16'd20) begin
-            middleBit<=Math1;
-            middleBit_M<=4'd1;
-        end
-        else if(scanwdata-highBit_M*16'd100>=16'd20&scanwdata-highBit_M*16'd100<16'd30) begin
-            middleBit<=Math2;
-            middleBit_M<=4'd2;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd30&scanwdata-highBit_M*16'd100<16'd40) begin
-            middleBit<=Math3;
-            middleBit_M<=4'd3;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd40&scanwdata-highBit_M*16'd100<16'd50) begin
-            middleBit<=Math4;
-            middleBit_M<=4'd4;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd50&scanwdata-highBit_M*16'd100<16'd60) begin
-            middleBit<=Math5;
-            middleBit_M<=4'd5;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd60&scanwdata-highBit_M*16'd100<16'd70) begin
-            middleBit<=Math6;
-            middleBit_M<=4'd6;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd70&scanwdata-highBit_M*16'd100<16'd80) begin
-            middleBit<=Math7;
-            middleBit_M<=4'd7;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd80&scanwdata-highBit_M*16'd100<16'd90) begin
-            middleBit<=Math8;
-            middleBit_M<=4'd8;
-        end
-        if(scanwdata-highBit_M*16'd100>=16'd90&scanwdata-highBit_M*16'd100<16'd100) begin
-            middleBit<=Math9;
-            middleBit_M<=4'd9;
-        end
-        else begin
-             middleBit<=Null;
-            middleBit_M<=4'd0;
-        end
-        complete_middle<=~complete_middle;
-end
-
-//turn scanwdata into decimal form [low bit]
-always @(complete_middle) begin
-        //decide unit
-        if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd1) begin
-            lowBit<=Math1;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd2) begin
-            lowBit<=Math2;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd3) begin
-            lowBit<=Math3;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd4) begin
-            lowBit<=Math4;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd5) begin
-            lowBit<=Math5;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd6) begin
-            lowBit<=Math6;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd7) begin
-            lowBit<=Math7;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd8) begin
-            lowBit<=Math8;
-        end
-        else if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd9) begin
-            lowBit<=Math9;
-        end
-        else begin
-            lowBit<=Math0;
-        end
 end
 
 //choose what numbers to show on the screen
@@ -212,6 +163,8 @@ always @(scan_cnt1)
 begin
     if(scan_cs && scan_write) begin
         case(scan_cnt1)
+        4:Y_r=tenThousandsBit;
+        3:Y_r=thousandBit;
         2:Y_r=highBit;
         1:Y_r=middleBit;
         0:Y_r=lowBit;
