@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,8 +36,8 @@ set_property ip_cache_permissions {read write} [current_project]
 add_files {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/RAM/dmem32.coe}}
 add_files {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/prgrom/prgmip32.coe}}
 add_files {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/prgrom/prgmip32a.coe}}
-add_files {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/programrom/prgmip32leddemo.coe}}
-add_files {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/program_rom/prgmip32leddemo.coe}}
+add_files {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/programrom/prgmip32leddemo.coe}}
+add_files {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/program_rom/prgmip32leddemo.coe}}
 read_verilog -library xil_defaultlib {
   {G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/new/Executs32.v}
   {G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/new/IFetc32.v}
@@ -59,10 +58,10 @@ set_property used_in_implementation false [get_files -all {{g:/Spring 2021/orgni
 set_property used_in_implementation false [get_files -all {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/cpuclk/cpuclk.xdc}}]
 set_property used_in_implementation false [get_files -all {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/cpuclk/cpuclk_ooc.xdc}}]
 
-read_ip -quiet {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/program_rom/program_rom.xci}}
+read_ip -quiet {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/program_rom/program_rom.xci}}
 set_property used_in_implementation false [get_files -all {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/program_rom/program_rom_ooc.xdc}}]
 
-read_ip -quiet {{g:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/uart_bmpg_1/uart_bmpg_1.xci}}
+read_ip -quiet {{G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.srcs/sources_1/ip/uart_bmpg_1/uart_bmpg_1.xci}}
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
