@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="main_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="12060934fs"></ZoomStartTime>
+      <ZoomEndTime time="12171535fs"></ZoomEndTime>
+      <Cursor1Time time="12136000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/main_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/ledout" type="array">
+      <obj_property name="ElementShortName">ledout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/switchin" type="array">
+      <obj_property name="ElementShortName">switchin[23:0]</obj_property>
+      <obj_property name="ObjectShortName">switchin[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/register" type="array">
+      <obj_property name="ElementShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/mRead" type="logic">
+      <obj_property name="ElementShortName">mRead</obj_property>
+      <obj_property name="ObjectShortName">mRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/mWrite" type="logic">
+      <obj_property name="ElementShortName">mWrite</obj_property>
+      <obj_property name="ObjectShortName">mWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/ioRead" type="logic">
+      <obj_property name="ElementShortName">ioRead</obj_property>
+      <obj_property name="ObjectShortName">ioRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/ioWrite" type="logic">
+      <obj_property name="ElementShortName">ioWrite</obj_property>
+      <obj_property name="ObjectShortName">ioWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/m_rdata" type="array">
+      <obj_property name="ElementShortName">m_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/io_rdata" type="array">
+      <obj_property name="ElementShortName">io_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_rdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/r_rdata" type="array">
+      <obj_property name="ElementShortName">r_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/r_wdata" type="array">
+      <obj_property name="ElementShortName">r_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/addr_out" type="array">
+      <obj_property name="ElementShortName">addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/LEDCtrl" type="logic">
+      <obj_property name="ElementShortName">LEDCtrl</obj_property>
+      <obj_property name="ObjectShortName">LEDCtrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/SwitchCtrl" type="logic">
+      <obj_property name="ElementShortName">SwitchCtrl</obj_property>
+      <obj_property name="ObjectShortName">SwitchCtrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Ifetc32_0/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Ifetc32_0/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+</wave_config>

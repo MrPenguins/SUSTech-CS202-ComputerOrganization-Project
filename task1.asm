@@ -63,7 +63,8 @@ task1:
 pause:
 	# $10 as counter, $11 as boundary
 	and $10,$10,$0	# set $10 to 0
-	ori $11,$0,0x74FBEA	# set $11 to 26000
+	lui $11,0x74
+	ori $11,$11,0x7BEA	# set $11 to 26000
 	pauseloop:
 	lw $15,0xC72($28)	# load the control bit
 	beq $15,$16,initial

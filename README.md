@@ -7,7 +7,7 @@
 |Basic I/O related component|*done on 17th, MAY*
 |Basic conponent fix and link|*done on 18th, MAY*
 |Uart interface| **In progress**
-|Required test 1|**In progress**
+|Required test 1|*done on 21st MAY*
 |Required test 2|**In progress**
 |Test-use asm file design|**Not start**
 
