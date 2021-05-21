@@ -89,6 +89,7 @@ always @(posedge scan_clk,posedge scan_rst) begin
     if(scan_rst)begin
         highBit<=Null;
         highBit_M<=4'd0;
+        complete_high<=1'd0;
     end
     else begin
         //decide hundred
@@ -117,6 +118,7 @@ always @(posedge scan_clk,posedge scan_rst) begin
             highBit_M<=4'd0;
         end
         complete_high<=1'd1;
+        complete_middle<=1'd0;
     end
 end
 
@@ -126,6 +128,7 @@ always @(posedge complete_high,posedge scan_rst) begin
     if(scan_rst)begin
         middleBit<=Null;
         middleBit_M<=4'd0;
+        complete_middle<=1'd0;
     end
     else begin
         //decide decimal
@@ -169,8 +172,8 @@ always @(posedge complete_high,posedge scan_rst) begin
              middleBit<=Null;
             middleBit_M<=4'd0;
         end
-        complete_high<=1'd0;
         complete_middle<=1'd1;
+        complete_middle<=1'd0;
     end
 end
 
@@ -212,7 +215,6 @@ always @(posedge complete_middle,posedge scan_rst) begin
         else begin
             lowBit<=Math0;
         end
-        complete_middle<=1'd0;
     end
 end
 
@@ -225,10 +227,3 @@ begin
         1:Y_r=middleBit;
         0:Y_r=lowBit;
         endcase   
-    end
-    else begin
-      Y_r=Null;
-    end
-end
-
-endmodule
