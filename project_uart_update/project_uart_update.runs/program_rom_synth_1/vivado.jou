@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 21 17:58:38 2021
+# Process ID: 13596
+# Current directory: G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.runs/program_rom_synth_1
+# Command line: vivado.exe -log program_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source program_rom.tcl
+# Log file: G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.runs/program_rom_synth_1/program_rom.vds
+# Journal file: G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.runs/program_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source program_rom.tcl -notrace
