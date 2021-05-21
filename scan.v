@@ -36,6 +36,8 @@ reg[6:0] middleBit;// present ten
 reg[6:0] lowBit;// present unit
 reg[3:0] highBit_M;//present hundred real number
 reg[3:0] middleBit_M;// present ten real number
+reg complete_high;//decide if high bit has been calculated
+reg complete_middle;//decide if middle bit has been calculated
 
 parameter period1=200000;//period1 stable showing
 parameter Math0=7'b0111111;
@@ -56,9 +58,9 @@ assign Y={1'b1,(~Y_r[6:0])};//dot never light
 assign DIG=~DIG_R;
 
 //control stable showing
-always @(posedge scan_clk or negedge scan_rst)
+always @(posedge scan_clk or posedge scan_rst)
 begin
-    if(!scan_rst)
+    if(scan_rst)
     scan_cnt1<=0;
     else begin
         scan_cnt1<=scan_cnt1+1;
@@ -82,14 +84,11 @@ begin
     endcase
 end
 
-//turn scanwdata into decimal form
-always @(posedge scan_clk,negedge scan_rst) begin
-    if(!scan_rst)begin
+//turn scanwdata into decimal form [high bit]
+always @(posedge scan_clk,posedge scan_rst) begin
+    if(scan_rst)begin
         highBit<=Null;
-        middleBit<=Null;
-        lowBit<=Null;
         highBit_M<=4'd0;
-        middleBit_M<=4'd0;
     end
     else begin
         //decide hundred
@@ -117,7 +116,18 @@ always @(posedge scan_clk,negedge scan_rst) begin
             highBit<=Null;
             highBit_M<=4'd0;
         end
+        complete_high<=1'd1;
+    end
+end
 
+
+//turn scanwdata into decimal form [middle bit]
+always @(posedge complete_high,posedge scan_rst) begin
+    if(scan_rst)begin
+        middleBit<=Null;
+        middleBit_M<=4'd0;
+    end
+    else begin
         //decide decimal
         if(scanwdata-highBit_M*16'd100>=16'd10&scanwdata-highBit_M*16'd100<16'd20) begin
             middleBit<=Math1;
@@ -159,7 +169,18 @@ always @(posedge scan_clk,negedge scan_rst) begin
              middleBit<=Null;
             middleBit_M<=4'd0;
         end
+        complete_high<=1'd0;
+        complete_middle<=1'd1;
+    end
+end
 
+//turn scanwdata into decimal form [middle bit]
+always @(posedge complete_middle,posedge scan_rst) begin
+    if(scan_rst)begin
+        middleBit<=Null;
+        middleBit_M<=4'd0;
+    end
+    else begin
         //decide unit
         if(scanwdata-highBit_M*16'd100-middleBit_M*16'd10==16'd1) begin
             lowBit<=Math1;
@@ -191,6 +212,7 @@ always @(posedge scan_clk,negedge scan_rst) begin
         else begin
             lowBit<=Math0;
         end
+        complete_middle<=1'd0;
     end
 end
 
