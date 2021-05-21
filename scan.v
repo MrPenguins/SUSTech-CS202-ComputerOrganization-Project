@@ -121,7 +121,7 @@ always @(posedge scan_clk,posedge scan_rst) begin
             highBit<=Null;
             highBit_M<=4'd0;
         end
-        complete_high<=~complete_middle;
+        complete_high<=~complete_high;
     end
 end
 
@@ -169,6 +169,7 @@ always @(complete_high) begin
              middleBit<=Null;
             middleBit_M<=4'd0;
         end
+        complete_middle<=~complete_middle;
 end
 
 //turn scanwdata into decimal form [low bit]
