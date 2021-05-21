@@ -33,10 +33,10 @@ module main_tb(
         rst=1'b1;
         switchin=24'h000000;
         #10 rst=1'b0;
-        #5 switchin=24'hf896a1;
-        #15 switchin=24'h8888ab;
+        // #5 switchin=24'hf896a1;
+        // #15 switchin=24'h8888ab;
         
-        #200 $finish();
+        #400 $finish();
     end
 
     always #3 clk=~clk;
