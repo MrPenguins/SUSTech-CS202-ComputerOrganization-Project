@@ -41,36 +41,43 @@ task2:
 	# and $23,$0,$0		# set val to zero
 	addu $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	zoz:
 	# and $23,$0,$0		# set val to zero
 	subu $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	zoo:
 	# and $23,$0,$0		# set val to zero
 	sllv $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	ozz:
 	# and $23,$0,$0		# set val to zero
 	srlv $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	ozo:
 	# and $23,$0,$0		# set val to zero
 	sltu $23,$22,$21
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	ooz:
 	# and $23,$0,$0		# set val to zero
 	and $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	ooo:
 	# and $23,$0,$0		# set val to zero
 	xor $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
+	sw $23,0xC60($28)
 	j pause
 	
 pause:
