@@ -33,7 +33,7 @@ module main(clock,
   input [23:0]switchIn;
 
   wire clk;
-  cpuclk c(.clk_in1(clock), .clk_out1(clk));
+//   cpuclk c(.clk_in1(clock), .clk_out1(clk),.clk_out2(upg_clk));
   wire clk_1;
   assign clk_1 = clk;
 
@@ -51,6 +51,9 @@ module main(clock,
   wire upg_rst_i;
   wire upg_rx_i;
   wire upg_clk,upg_clk_o;//new clock and its output of ip core
+
+  cpuclk c(.clk_in1(clock), .clk_out1(clk),.clk_out2(upg_clk)); //move to here 
+
   wire upg_wen_o;//uart write out enable
   wire upg_done_o;//uart rx data have done
   wire [14:0] upg_adr_o;//data to which memory unit of program_rom/dmemory32
@@ -64,7 +67,7 @@ module main(clock,
        if(reset) upg_rst=1;
   end
   assign rst=reset|!upg_rst;//reset signal combination with uart and fpg!!！
-  cpuclk c2(.clk_in1(clock),.clk_out2(upg_clk));
+//   cpuclk c2(.clk_in1(clock),.clk_out2(upg_clk));
   uart_bmpg_1 uart(.upg_clk_i(upg_clk),
                     .upg_rst_i(upg_rst),
                     .upg_rx_i(rx),

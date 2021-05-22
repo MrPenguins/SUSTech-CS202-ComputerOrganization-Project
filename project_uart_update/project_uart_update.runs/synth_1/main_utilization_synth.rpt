@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri May 21 21:03:31 2021
+| Date         : Sat May 22 23:14:24 2021
 | Host         : LAPTOP-KI3QR63J running 64-bit major release  (build 9200)
 | Command      : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
 | Design       : main
@@ -117,10 +117,10 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    8 |     0 |        32 | 25.00 |
+| BUFGCTRL   |    5 |     0 |        32 | 15.63 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
-| MMCME2_ADV |    2 |     0 |         6 | 33.33 |
-| PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         6 |  0.00 |
+| PLLE2_ADV  |    1 |     0 |         6 | 16.67 |
 | BUFMRCE    |    0 |     0 |        12 |  0.00 |
 | BUFHCE     |    0 |     0 |        96 |  0.00 |
 | BUFR       |    0 |     0 |        24 |  0.00 |
@@ -148,28 +148,28 @@ Table of Contents
 7. Primitives
 -------------
 
-+------------+------+---------------------+
-|  Ref Name  | Used | Functional Category |
-+------------+------+---------------------+
-| LUT6       | 1172 |                 LUT |
-| FDRE       | 1027 |        Flop & Latch |
-| LUT5       |  272 |                 LUT |
-| MUXF7      |  267 |               MuxFx |
-| LUT3       |  236 |                 LUT |
-| LUT4       |  178 |                 LUT |
-| LUT2       |  110 |                 LUT |
-| FDCE       |   71 |        Flop & Latch |
-| MUXF8      |   62 |               MuxFx |
-| CARRY4     |   40 |          CarryLogic |
-| LDCE       |   30 |        Flop & Latch |
-| IBUF       |   28 |                  IO |
-| OBUF       |   25 |                  IO |
-| RAMB36E1   |   14 |        Block Memory |
-| BUFG       |    8 |               Clock |
-| LUT1       |    3 |                 LUT |
-| MMCME2_ADV |    2 |               Clock |
-| RAMB18E1   |    1 |        Block Memory |
-+------------+------+---------------------+
++-----------+------+---------------------+
+|  Ref Name | Used | Functional Category |
++-----------+------+---------------------+
+| LUT6      | 1172 |                 LUT |
+| FDRE      | 1027 |        Flop & Latch |
+| LUT5      |  272 |                 LUT |
+| MUXF7     |  267 |               MuxFx |
+| LUT3      |  236 |                 LUT |
+| LUT4      |  178 |                 LUT |
+| LUT2      |  110 |                 LUT |
+| FDCE      |   71 |        Flop & Latch |
+| MUXF8     |   62 |               MuxFx |
+| CARRY4    |   40 |          CarryLogic |
+| LDCE      |   30 |        Flop & Latch |
+| IBUF      |   28 |                  IO |
+| OBUF      |   25 |                  IO |
+| RAMB36E1  |   14 |        Block Memory |
+| BUFG      |    5 |               Clock |
+| LUT1      |    3 |                 LUT |
+| RAMB18E1  |    1 |        Block Memory |
+| PLLE2_ADV |    1 |               Clock |
++-----------+------+---------------------+
 
 
 8. Black Boxes
