@@ -53,6 +53,9 @@ module main(clock,
   wire upg_clk,upg_clk_o;//new clock and its output of ip core
 
   cpuclk c(.clk_in1(clock), .clk_out1(clk),.clk_out2(upg_clk)); //move to here 
+//TODO: only for test!!!!!!
+//   assign clk=clock;
+//   assign upg_clk=clock;
 
   wire upg_wen_o;//uart write out enable
   wire upg_done_o;//uart rx data have done
@@ -220,7 +223,7 @@ module main(clock,
         .nBranch(control32_0_nBranch));
   dmemory32 dmemory32_0
        (.Memwrite(control32_0_MemWrite),
-        .address(MemOrIO_0_addr_out),
+        .address(MemOrIO_0_addr_out[15:2]),
         .clock(clk_1),
         .read_data(dmemory32_0_read_data),
         .write_data(MemOrIO_0_write_data),

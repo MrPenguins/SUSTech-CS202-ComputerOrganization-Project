@@ -33,11 +33,10 @@ module main_tb(
     initial begin
         clk=1'b1;
         rst=1'b1;
-        uart=1'b0;
+        uart=1'b1;
         switchin=24'h000000;
         #10 rst=1'b0;
-        #5 switchin=24'hf896a1;
-        #15 switchin=24'h8888ab;
+        rx=1'b1;
         
         #200 $finish();
     end

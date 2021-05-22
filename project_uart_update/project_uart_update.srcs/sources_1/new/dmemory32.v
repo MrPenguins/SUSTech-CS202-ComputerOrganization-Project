@@ -42,7 +42,7 @@ input upg_done_i//1 if programming is finished
 
     RAM ram (.clka(kickOff?ram_clk:upg_clk_i), 
              .wea(kickOff?Memwrite:upg_wen_i), 
-             .addra(kickOff?address:upg_adr_i), 
+             .addra(kickOff?address : upg_adr_i), 
              .dina(kickOff?write_data:upg_dat_i), 
              .douta(read_data));
 endmodule

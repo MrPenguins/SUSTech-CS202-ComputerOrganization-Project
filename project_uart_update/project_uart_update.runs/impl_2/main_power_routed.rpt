@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sat May 22 23:19:43 2021
+| Date             : Sun May 23 01:48:45 2021
 | Host             : LAPTOP-KI3QR63J running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -52,16 +52,16 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.002 |        6 |       --- |             --- |
+| Clocks                  |     0.001 |        6 |       --- |             --- |
 | Slice Logic             |     0.004 |     4372 |       --- |             --- |
-|   LUT as Logic          |     0.004 |     2105 |     63400 |            3.32 |
+|   LUT as Logic          |     0.004 |     2103 |     63400 |            3.32 |
 |   CARRY4                |    <0.001 |       60 |     15850 |            0.38 |
 |   F7/F8 Muxes           |    <0.001 |      329 |     63400 |            0.52 |
 |   Register              |    <0.001 |     1491 |    126800 |            1.18 |
 |   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       10 |     19000 |            0.05 |
 |   Others                |     0.000 |      127 |       --- |             --- |
-| Signals                 |     0.008 |     3781 |       --- |             --- |
+| Signals                 |     0.008 |     3778 |       --- |             --- |
 | Block RAM               |     0.005 |       29 |       135 |           21.48 |
 | PLL                     |     0.100 |        1 |         6 |           16.67 |
 | I/O                     |     0.002 |       53 |       285 |           18.60 |
@@ -149,7 +149,7 @@ Table of Contents
 | Name                                                                            | Power (W) |
 +---------------------------------------------------------------------------------+-----------+
 | main                                                                            |     0.121 |
-|   Idecode32_0                                                                   |     0.005 |
+|   Idecode32_0                                                                   |     0.004 |
 |   Ifetc32_0                                                                     |    <0.001 |
 |   c                                                                             |     0.101 |
 |     inst                                                                        |     0.101 |
@@ -199,7 +199,7 @@ Table of Contents
 |           gnbram.gnativebmg.native_blk_mem_gen                                  |     0.004 |
 |             valid.cstr                                                          |     0.004 |
 |               bindec_a.bindec_inst_a                                            |    <0.001 |
-|               has_mux_a.A                                                       |     0.001 |
+|               has_mux_a.A                                                       |    <0.001 |
 |               ramloop[0].ram.r                                                  |    <0.001 |
 |                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[10].ram.r                                                 |    <0.001 |
