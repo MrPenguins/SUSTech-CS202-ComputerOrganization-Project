@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="main_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1628250000fs"></ZoomStartTime>
+      <ZoomEndTime time="1656300001fs"></ZoomEndTime>
+      <Cursor1Time time="1492495000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="72" />
+   <wvobject fp_name="/main_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/ledout" type="array">
+      <obj_property name="ElementShortName">ledout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/switchin" type="array">
+      <obj_property name="ElementShortName">switchin[23:0]</obj_property>
+      <obj_property name="ObjectShortName">switchin[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/register" type="array">
+      <obj_property name="ElementShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/mRead" type="logic">
+      <obj_property name="ElementShortName">mRead</obj_property>
+      <obj_property name="ObjectShortName">mRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/mWrite" type="logic">
+      <obj_property name="ElementShortName">mWrite</obj_property>
+      <obj_property name="ObjectShortName">mWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/ioRead" type="logic">
+      <obj_property name="ElementShortName">ioRead</obj_property>
+      <obj_property name="ObjectShortName">ioRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/ioWrite" type="logic">
+      <obj_property name="ElementShortName">ioWrite</obj_property>
+      <obj_property name="ObjectShortName">ioWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/m_rdata" type="array">
+      <obj_property name="ElementShortName">m_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/io_rdata" type="array">
+      <obj_property name="ElementShortName">io_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_rdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/r_rdata" type="array">
+      <obj_property name="ElementShortName">r_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/r_wdata" type="array">
+      <obj_property name="ElementShortName">r_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/addr_out" type="array">
+      <obj_property name="ElementShortName">addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/LEDCtrl" type="logic">
+      <obj_property name="ElementShortName">LEDCtrl</obj_property>
+      <obj_property name="ObjectShortName">LEDCtrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/MemOrIO_0/SwitchCtrl" type="logic">
+      <obj_property name="ElementShortName">SwitchCtrl</obj_property>
+      <obj_property name="ObjectShortName">SwitchCtrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Ifetc32_0/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Ifetc32_0/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scanwdata" type="array">
+      <obj_property name="ElementShortName">scanwdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">scanwdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scan_clk" type="logic">
+      <obj_property name="ElementShortName">scan_clk</obj_property>
+      <obj_property name="ObjectShortName">scan_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scan_rst" type="logic">
+      <obj_property name="ElementShortName">scan_rst</obj_property>
+      <obj_property name="ObjectShortName">scan_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scan_write" type="logic">
+      <obj_property name="ElementShortName">scan_write</obj_property>
+      <obj_property name="ObjectShortName">scan_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scan_cs" type="logic">
+      <obj_property name="ElementShortName">scan_cs</obj_property>
+      <obj_property name="ObjectShortName">scan_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/DIG" type="array">
+      <obj_property name="ElementShortName">DIG[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIG[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/clkout1" type="logic">
+      <obj_property name="ElementShortName">clkout1</obj_property>
+      <obj_property name="ObjectShortName">clkout1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/cnt1" type="array">
+      <obj_property name="ElementShortName">cnt1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/scan_cnt1" type="array">
+      <obj_property name="ElementShortName">scan_cnt1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">scan_cnt1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/tenThousandsBit" type="array">
+      <obj_property name="ElementShortName">tenThousandsBit[6:0]</obj_property>
+      <obj_property name="ObjectShortName">tenThousandsBit[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/thousandBit" type="array">
+      <obj_property name="ElementShortName">thousandBit[6:0]</obj_property>
+      <obj_property name="ObjectShortName">thousandBit[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/highBit" type="array">
+      <obj_property name="ElementShortName">highBit[6:0]</obj_property>
+      <obj_property name="ObjectShortName">highBit[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/middleBit" type="array">
+      <obj_property name="ElementShortName">middleBit[6:0]</obj_property>
+      <obj_property name="ObjectShortName">middleBit[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/lowBit" type="array">
+      <obj_property name="ElementShortName">lowBit[6:0]</obj_property>
+      <obj_property name="ObjectShortName">lowBit[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/decimal_form" type="array">
+      <obj_property name="ElementShortName">decimal_form[19:0]</obj_property>
+      <obj_property name="ObjectShortName">decimal_form[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Y_r" type="array">
+      <obj_property name="ElementShortName">Y_r[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_r[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/DIG_R" type="array">
+      <obj_property name="ElementShortName">DIG_R[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIG_R[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/period1" type="array">
+      <obj_property name="ElementShortName">period1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math0" type="array">
+      <obj_property name="ElementShortName">Math0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math1" type="array">
+      <obj_property name="ElementShortName">Math1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math2" type="array">
+      <obj_property name="ElementShortName">Math2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math2[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math3" type="array">
+      <obj_property name="ElementShortName">Math3[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math3[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math4" type="array">
+      <obj_property name="ElementShortName">Math4[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math4[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math5" type="array">
+      <obj_property name="ElementShortName">Math5[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math5[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math6" type="array">
+      <obj_property name="ElementShortName">Math6[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math6[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math7" type="array">
+      <obj_property name="ElementShortName">Math7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math8" type="array">
+      <obj_property name="ElementShortName">Math8[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math8[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Math9" type="array">
+      <obj_property name="ElementShortName">Math9[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Math9[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/scan_0/Null" type="array">
+      <obj_property name="ElementShortName">Null[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Null[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/ALU_result" type="array">
+      <obj_property name="ElementShortName">ALU_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/Jal" type="logic">
+      <obj_property name="ElementShortName">Jal</obj_property>
+      <obj_property name="ObjectShortName">Jal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/MemtoReg" type="logic">
+      <obj_property name="ElementShortName">MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/RegDst" type="logic">
+      <obj_property name="ElementShortName">RegDst</obj_property>
+      <obj_property name="ObjectShortName">RegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/opcplus4" type="array">
+      <obj_property name="ElementShortName">opcplus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opcplus4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/read_data_1" type="array">
+      <obj_property name="ElementShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/read_data_2" type="array">
+      <obj_property name="ElementShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/imme_extend" type="array">
+      <obj_property name="ElementShortName">imme_extend[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imme_extend[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/register" type="array">
+      <obj_property name="ElementShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/rs" type="array">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/rt" type="array">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/immediate_number" type="array">
+      <obj_property name="ElementShortName">immediate_number[15:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate_number[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/write_register_address" type="array">
+      <obj_property name="ElementShortName">write_register_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_register_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/m/Idecode32_0/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../top.srcs/sources_1/ip/cpuclk" \
+"../../../../top.srcs/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../top.srcs/sources_1/ip/prgrom/sim/prgrom.v" \
+"../../../../top.srcs/sources_1/new/Bin_BCD.v" \
+"../../../../top.srcs/sources_1/new/Executs32.v" \
+"../../../../top.srcs/sources_1/new/IFetc32.v" \
+"../../../../top.srcs/sources_1/new/Idecoder32.v" \
+"../../../../top.srcs/sources_1/new/MemOrIO.v" \
+"../../../../top.srcs/sources_1/new/controller.v" \
+"../../../../top.srcs/sources_1/new/dmemory32.v" \
+"../../../../top.srcs/sources_1/new/leds.v" \
+"../../../../top.srcs/sources_1/new/main.v" \
+"../../../../top.srcs/sources_1/new/scan.v" \
+"../../../../top.srcs/sources_1/new/switchs.v" \
+"../../../../top.srcs/sim_1/new/main_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

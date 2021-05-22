@@ -1,0 +1,10 @@
+link.v,verilog,xil_defaultlib,../../../bd/link/sim/link.v,
+link_control32_0_3.v,verilog,xil_defaultlib,../../../bd/link/ip/link_control32_0_3/sim/link_control32_0_3.v,
+link_Ifetc32_0_0.v,verilog,xil_defaultlib,../../../bd/link/ip/link_Ifetc32_0_0/sim/link_Ifetc32_0_0.v,
+link_Idecode32_0_1.v,verilog,xil_defaultlib,../../../bd/link/ip/link_Idecode32_0_1/sim/link_Idecode32_0_1.v,
+link_Executs32_0_0.v,verilog,xil_defaultlib,../../../bd/link/ip/link_Executs32_0_0/sim/link_Executs32_0_0.v,
+link_dmemory32_0_1.v,verilog,xil_defaultlib,../../../bd/link/ip/link_dmemory32_0_1/sim/link_dmemory32_0_1.v,
+link_MemOrIO_0_0.v,verilog,xil_defaultlib,../../../bd/link/ip/link_MemOrIO_0_0/sim/link_MemOrIO_0_0.v,
+link_leds_0_0.v,verilog,xil_defaultlib,../../../bd/link/ip/link_leds_0_0/sim/link_leds_0_0.v,
+link_switchs_0_0.v,verilog,xil_defaultlib,../../../bd/link/ip/link_switchs_0_0/sim/link_switchs_0_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
