@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun May 23 01:33:14 2021
-# Process ID: 13804
+# Start of session at: Sun May 23 02:30:31 2021
+# Process ID: 25544
 # Current directory: G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: G:/Spring 2021/orgnization/proj/SUSTech-CS202-ComputerOrganization-Project/project_uart_update/project_uart_update.runs/synth_1/main.vds
