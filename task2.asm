@@ -36,39 +36,54 @@ task2:
 	or $21,$10,$20
 	srl $21,$21,0x8		# get x to $21
 	and $22,$10,$20		# get y to $22
-	j task2
+	j pause
 	zzo:
-	and $23,$0,$0		# set val to zero
-	add $23,$21,$22
+	# and $23,$0,$0		# set val to zero
+	addu $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	zoz:
-	and $23,$0,$0		# set val to zero
+	# and $23,$0,$0		# set val to zero
 	subu $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	zoo:
-	and $23,$0,$0		# set val to zero
+	# and $23,$0,$0		# set val to zero
 	sllv $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	ozz:
-	and $23,$0,$0		# set val to zero
+	# and $23,$0,$0		# set val to zero
 	srlv $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	ozo:
-	and $23,$0,$0		# set val to zero
-	slt $23,$22,$21
+	# and $23,$0,$0		# set val to zero
+	sltu $23,$22,$21
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	ooz:
-	and $23,$0,$0		# set val to zero
+	# and $23,$0,$0		# set val to zero
 	and $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
 	ooo:
-	and $23,$0,$0		# set val to zero
+	# and $23,$0,$0		# set val to zero
 	xor $23,$21,$22
 	sw $23,0xC80($28)	# set val to scan
-	j task2
+	j pause
+	
+pause:
+#	# $25 as counter, $26 as boundary
+#	and $25,$25,$0	# set $10 to 0
+#	lui $26,0x00000074
+#	ori $26,$26,0x0000FBEA	# set $11 to 26000
+#	pauseloop:
+#	beq $25,$26,endloop
+#	addi $25,$25,0x0001
+#	j pauseloop
+#	endloop:
+#	j task2
+	lw $25,0xC72($28)	# load the control bit
+	bne $25,$9,task2
+	j pause
