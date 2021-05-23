@@ -8,6 +8,8 @@
 | Switch(17~24) | 0xFFFFFC72 |
 | Scan(16 bit)  | 0xFFFFFC80 |
 | Keyboard      | 0xFFFFFC90 |
+| Buzz          | 0xFFFFFCA0 |
+| Button        | 0xFFFFFCB0 |
 
 
 
