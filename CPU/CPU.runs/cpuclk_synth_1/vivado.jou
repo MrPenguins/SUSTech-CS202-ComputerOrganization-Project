@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 23 15:22:22 2021
+# Process ID: 2244
+# Current directory: D:/DigitalDesign/CPU/CPU.runs/cpuclk_synth_1
+# Command line: vivado.exe -log cpuclk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpuclk.tcl
+# Log file: D:/DigitalDesign/CPU/CPU.runs/cpuclk_synth_1/cpuclk.vds
+# Journal file: D:/DigitalDesign/CPU/CPU.runs/cpuclk_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpuclk.tcl -notrace
