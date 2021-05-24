@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1621830186">
+  <File Type="OPT-HWDEF" Name="CPU_UART.hwdef"/>
+  <File Type="PA-DCP" Name="CPU_UART.dcp"/>
+  <File Type="OPT-DCP" Name="CPU_UART_opt.dcp"/>
+  <File Type="ROUTE-PWR" Name="CPU_UART_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="CPU_UART.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPU_UART_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="CPU_UART_reports.tcl"/>
+  <File Type="BG-DRC" Name="CPU_UART.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CPU_UART_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="CPU_UART_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="CPU_UART_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="CPU_UART_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="CPU_UART_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="CPU_UART_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="CPU_UART_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="CPU_UART_placed.dcp"/>
+  <File Type="PLACE-IO" Name="CPU_UART_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CPU_UART_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CPU_UART_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CPU_UART_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CPU_UART_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CPU_UART_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CPU_UART_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="CPU_UART_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CPU_UART_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CPU_UART_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="CPU_UART_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CPU_UART_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="CPU_UART.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="CPU_UART_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CPU_UART_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="CPU_UART_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CPU_UART_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="CPU_UART_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CPU_UART_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="CPU_UART.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="CPU_UART_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="CPU_UART.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPU_UART_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="CPU_UART.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPU_UART_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="CPU_UART.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPU_UART_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CPU_UART_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CPU_UART_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPU_UART_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPU_UART_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPU_UART_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPU_UART_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CPU_UART_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="CPU_UART.vdi"/>
+  <File Type="ROUTE-CLK" Name="CPU_UART_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU_UART_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPU_UART_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPU_UART_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPU_UART_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPU_UART_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="CPU_UART.nky"/>
+  <File Type="BITSTR-BMM" Name="CPU_UART_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CPU_UART.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="CPU_UART.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="CPU_UART.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ALU.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ControllerIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ControllerIO.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Decoder.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Dmem_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Dmem_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780743"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/IFetch_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/IFetch_UART.v"/>
+        <Attr Name="ImportTime" Val="1621784523"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/LED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/LED.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/MemOrIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/MemOrIO.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ProgramROM_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ProgramROM_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780820"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Switch.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Tubs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Tubs.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/CPU_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/CPU_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../dmem32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../prgmip32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU_UART"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CPU/constraint.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/constraint.xdc"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/CPU/constraint.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_bmpg_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="prgrom"/>
+</GenRun>

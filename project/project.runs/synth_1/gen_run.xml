@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1621830139">
+  <File Type="PA-TCL" Name="CPU_UART.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CPU_UART_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CPU_UART_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CPU_UART.vds"/>
+  <File Type="RDS-UTIL" Name="CPU_UART_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CPU_UART_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CPU_UART.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CPU_UART_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CPU_UART_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ALU.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ControllerIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ControllerIO.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Decoder.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Dmem_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Dmem_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780743"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/IFetch_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/IFetch_UART.v"/>
+        <Attr Name="ImportTime" Val="1621784523"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/LED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/LED.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/MemOrIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/MemOrIO.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/ProgramROM_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/ProgramROM_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780820"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Switch.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Tubs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/Tubs.v"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CPU/CPU_UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/CPU_UART.v"/>
+        <Attr Name="ImportTime" Val="1621780724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../dmem32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../prgmip32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU_UART"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CPU/constraint.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/brooklyn On My Mac/Sophomore/study/大二下/computer organization/project/11911740/CPU/constraint.xdc"/>
+        <Attr Name="ImportTime" Val="1621756979"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/CPU/constraint.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_bmpg_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="prgrom"/>
+</GenRun>
