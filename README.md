@@ -9,7 +9,7 @@
 |Uart interface| **In progress**|
 |Required test 1|*done on 21st MAY*|
 |Required test 2|*done on 22nd MAY*|
-|Test-use asm file design|**Not start**|
+|Test-use asm file design|*done on 24th MAY*|
 
 *TODO:* Special clock rate 500Hz for digits tube.  (Solved)
 
