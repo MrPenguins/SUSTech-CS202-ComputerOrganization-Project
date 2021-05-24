@@ -14,7 +14,7 @@ initial:
 	and $21,$0,$0		# set $21 to 0
 	and $12,$12,$0		# set val to zero
 	ori $16,$0,0x0010	# $16 rst value
-	srl $20,$t1,8		# set $20 to 0x0000FFFF
+	srl $20,$1,16		# set $20 to 0x0000FFFF
 	
 task1:
 	lw $9,0xC72($28)	# load the control bit
